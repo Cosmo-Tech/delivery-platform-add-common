@@ -26,4 +26,5 @@ module "cosmotech-tenant" {
   cluster_name         = var.cluster_name
   vnet_iprange         = var.vnet_iprange
   dns_record           = var.dns_record
+  deployment_type      = var.deployment_type
 }
