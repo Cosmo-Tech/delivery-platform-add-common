@@ -30,4 +30,5 @@ module "cosmotech-tenant" {
   adt_principal_id       = var.adt_principal_id
   platform_client_id     = var.platform_client_id
   platform_client_secret = var.platform_client_secret
+  kubernetes_version     = var.kubernetes_version
 }
