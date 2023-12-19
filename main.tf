@@ -31,4 +31,6 @@ module "cosmotech-tenant" {
   platform_client_id     = var.platform_client_id
   platform_client_secret = var.platform_client_secret
   kubernetes_version     = var.kubernetes_version
+  loadbalancer_ip        = var.loadbalancer_ip
+  resource_group         = var.resource_group
 }
