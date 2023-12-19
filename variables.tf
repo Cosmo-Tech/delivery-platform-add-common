@@ -170,12 +170,6 @@ variable "create_dnsrecord" {
   default     = true
 }
 
-variable "create_vnet" {
-  description = "Create the Virtual Network for AKS"
-  type        = bool
-  default     = true
-}
-
 variable "create_secrets" {
   description = "Create secret for application registrtations"
   type        = bool
@@ -276,12 +270,6 @@ variable "platform_client_secret" {
   type        = string
   default     = ""
   description = "The client secret of the existing ADT Platform's app registration"
-}
-
-variable "platform_subnet_id" {
-  type        = string
-  default     = ""
-  description = "The ID of the existing subnet the AKS must be attached to."
 }
 
 # Backend remote vars
