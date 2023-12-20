@@ -33,4 +33,5 @@ module "cosmotech-tenant" {
   kubernetes_version     = var.kubernetes_version
   loadbalancer_ip        = var.loadbalancer_ip
   resource_group         = var.resource_group
+  api_dns_name           = var.api_dns_name
 }
