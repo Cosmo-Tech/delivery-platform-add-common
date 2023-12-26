@@ -10,9 +10,9 @@ data "terraform_remote_state" "state" {
   }
 }
 
-module "cosmotech-tenant" {
+module "cosmotech-common" {
   source  = "Cosmo-Tech/cosmotech-common/azure"
-  version = "0.2.12"
+  version = "0.2.13"
 
   subscription_id        = var.subscription_id
   tenant_id              = var.tenant_id
