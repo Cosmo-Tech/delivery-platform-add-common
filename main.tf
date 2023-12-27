@@ -12,7 +12,7 @@ data "terraform_remote_state" "state" {
 
 module "cosmotech-common" {
   source  = "Cosmo-Tech/cosmotech-common/azure"
-  version = "0.2.13"
+  version = "0.2.14"
 
   subscription_id        = var.subscription_id
   tenant_id              = var.tenant_id
