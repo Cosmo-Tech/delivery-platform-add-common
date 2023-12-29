@@ -34,4 +34,5 @@ module "cosmotech-common" {
   loadbalancer_ip        = var.loadbalancer_ip
   resource_group         = var.resource_group
   dns_zone_name          = var.dns_zone_name
+  location               = var.location
 }
