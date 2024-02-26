@@ -44,6 +44,12 @@ Add backend_remote to terraform.tfvars file and set it to false:
 backend_remote = false
 ```
 
+Next, initialize Terraform configuration:
+
+```bash
+terraform init
+```
+
 
 # 2. Create resources ###
 
