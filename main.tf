@@ -12,7 +12,7 @@ data "terraform_remote_state" "state" {
 
 module "cosmotech-common" {
   source  = "Cosmo-Tech/cosmotech-common/azure"
-  version = "0.2.16"
+  version = "0.2.17"
 
   subscription_id        = var.subscription_id
   tenant_id              = var.tenant_id
@@ -35,4 +35,12 @@ module "cosmotech-common" {
   resource_group         = var.resource_group
   dns_zone_name          = var.dns_zone_name
   location               = var.location
+
+  # loki
+  loki_release_name                = var.loki_release_name
+  loki_persistence_memory          = var.loki_persistence_memory
+  loki_retention_period            = var.loki_retention_period
+  helm_repo_url                    = var.helm_repo_url
+  helm_chart                       = var.helm_chart
+  loki_max_entries_limet_per_query = var.loki_max_entries_limet_per_query
 }
