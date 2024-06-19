@@ -17,15 +17,13 @@ terraform {
       version = "2.9.0"
     }
     kubectl = {
-      source  = "gavinbunney/kubectl"
+      source  = "gavinbunney"
       version = "1.14.0"
     }
     http = {
       source  = "hashicorp/http"
       version = "3.4.0"
     }
-  }
-  backend "azurerm" {
   }
   required_version = ">= 1.3.9"
 }
