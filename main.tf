@@ -1,6 +1,6 @@
 data "terraform_remote_state" "state" {
   count   = var.backend_remote ? 1 : 0
-  backend = "azurerm"
+  backend = "local"
   config = {
     resource_group_name  = var.tf_resource_group_name
     storage_account_name = var.tf_storage_account_name
@@ -12,7 +12,7 @@ data "terraform_remote_state" "state" {
 
 module "cosmotech-common" {
   source  = "Cosmo-Tech/cosmotech-common/azure"
-  version = "1.0.4"
+  version = "1.0.10"
 
   client_id       = var.client_id
   client_secret   = var.client_secret
